@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("categories")
 @AllArgsConstructor
-@CrossOrigin
+//@CrossOrigin
 public class CategoriesController {
     private CategoriesService categoriesService;
 

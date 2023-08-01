@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("products")
 @AllArgsConstructor
-@CrossOrigin
+//@CrossOrigin
 public class ProductsController {
 
     private ProductsService productsService;

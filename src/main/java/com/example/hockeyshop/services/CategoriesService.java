@@ -18,7 +18,7 @@ public class CategoriesService {
     private CategoriesRepository categoriesRepository;
 
     public List<CategoryResponseDto> getAll() {
-        List<Category> categories = categoriesRepository.findAll();
+        List<Category> categories = categoriesRepository.findAllByOrderByIdAsc();
 
         return categories.stream()
                 .map(category -> modelMapper.map(category,CategoryResponseDto.class))
